@@ -1,26 +1,15 @@
-import React from 'react';
-import axios from 'axios';
+import React, { useState } from 'react';
+import Button from "./Button";
 
-export default function Neko() {
-  const [img, setImg] = React.useState("");
-  const getData = async () => {
-    try {
-      const res = await axios.get("https://api.waifu.pics/sfw/neko");
-      setImg(res.data.url);
-    } catch(err) {
-      console.log(err);
-    }
-  }
-  React.useEffect(() => {
-    getData();
-  }, []);
+const Neko: React.FC = () => {
+  const [img, setImg] = useState<string>("");
+
   return (
     <div className='m-2 flex justify-center items-center flex-col'>
-      <button className='text-1xl p-2 border rounded-xl border-neutral-950 w-30 h-12 mb-2 transition ease-linear hover:text-purple-400 hover:border-purple-400' onClick={getData}>
-        Get random image
-      </button>
-      <br />
-      {img && <img src={img} alt="Random Awoo" className="h-auto max-w-lg rounded-lg" />}
+      <Button setImg={setImg} imageType="neko" />
+      {img && <img src={img} alt="Random Neko" className="h-auto max-w-lg rounded-lg" />}
     </div>
-  )
-}
+  );
+};
+
+export default Neko;
