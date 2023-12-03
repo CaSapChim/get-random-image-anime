@@ -4,7 +4,8 @@ import Home from "./components/Home";
 import Awoo from "./components/Awoo";
 import Neko from "./components/Neko";
 import Waifu from "./components/Waifu";
-import Nsfw from "./components/Nsfw";
+import NekoNSFW from "./components/NSFW/NekoNSFW";
+import WaifuNSFW from "./components/NSFW/WaifuNSFW";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
           <Route path="/awoo" element={<Awoo/>}></Route>
           <Route path="/neko" element={<Neko/>}></Route>
           <Route path="/waifu" element={<Waifu/>}></Route>
-          <Route path="/nsfw" element={<Nsfw/>}></Route>
+          <Route path="/nsfw/neko" element={<NekoNSFW/>}></Route>
+          <Route path="/nsfw/waifu" element={<WaifuNSFW/>}></Route>
         </Routes> 
       </div>
     </Router>
