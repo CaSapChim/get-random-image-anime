@@ -19,12 +19,12 @@ const Button: React.FC<ButtonProps> = ({ setImg, imageType }) => {
   return (
     <div className='m-2 flex justify-center items-center flex-col'>
       <button
+        type="button"
         onClick={getData}
-        className='text-1xl p-2 border rounded-xl border-neutral-950 w-30 h-12 mb-2 
-          transition ease-linear hover:text-purple-400 hover:border-purple-400'
+        className="px-4 py-3 bg-blue-600 rounded-md text-white outline-none focus:ring-4 shadow-lg transform active:scale-75 transition-transform"
       >
         Get Random {imageType.charAt(0).toUpperCase() + imageType.slice(1)} Image
-      </button>
+        </button>
     </div>
   );
 };

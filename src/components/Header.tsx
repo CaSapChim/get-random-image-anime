@@ -23,7 +23,7 @@ export default function Header() {
           <li>
             <Link to="/nsfw" className="transition duration-300 ease-in-out hover:text-purple-400">NSFW</Link>
             <ul className="subnav bg-gray-800 p-3 space-y-4">
-              <li><Link to="/nsfw" className="transition duration-300 ease-in-out hover:text-purple-400">BlowJob</Link></li>
+              <li><Link to="/nsfw/blowjob" className="transition duration-300 ease-in-out hover:text-purple-400">BlowJob</Link></li>
               <li><Link to="/nsfw/neko" className="transition duration-300 ease-in-out hover:text-purple-400">Neko</Link></li>
               <li><Link to="/nsfw/waifu" className="transition duration-300 ease-in-out hover:text-purple-400">Waifu</Link></li>
             </ul>

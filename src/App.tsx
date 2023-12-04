@@ -6,6 +6,7 @@ import Neko from "./components/Neko";
 import Waifu from "./components/Waifu";
 import NekoNSFW from "./components/NSFW/NekoNSFW";
 import WaifuNSFW from "./components/NSFW/WaifuNSFW";
+import BlowJobNSFW from "./components/NSFW/BlowJobNSFW";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/waifu" element={<Waifu/>}></Route>
           <Route path="/nsfw/neko" element={<NekoNSFW/>}></Route>
           <Route path="/nsfw/waifu" element={<WaifuNSFW/>}></Route>
+          <Route path="/nsfw/blowjob" element={<BlowJobNSFW/>}></Route>
         </Routes> 
       </div>
     </Router>
