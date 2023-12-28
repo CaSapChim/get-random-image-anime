@@ -9,19 +9,19 @@ export default function Header() {
       <div className='space-x-5 text-white pr-10 cursor-pointer'>
         <ul className="flex flex-row items-center justify-between p-1 space-x-5">
           <li>
-            <Link to="/" className="transition duration-300 ease-in-out hover:text-purple-400">Home</Link>
+            <Link to="/get-random-image-anime" className="transition duration-300 ease-in-out hover:text-purple-400">Home</Link>
           </li>
           <li>
-            <Link to="/awoo" className="transition duration-300 ease-in-out hover:text-purple-400">Awoo</Link>
+            <Link to="/get-random-image-anime/awoo" className="transition duration-300 ease-in-out hover:text-purple-400">Awoo</Link>
           </li>
           <li>
-            <Link to="/neko" className="transition duration-300 ease-in-out hover:text-purple-400">Neko</Link>
+            <Link to="/get-random-image-anime/neko" className="transition duration-300 ease-in-out hover:text-purple-400">Neko</Link>
           </li>
           <li>
-            <Link to="/waifu" className="transition duration-300 ease-in-out hover:text-purple-400">Waifu</Link>
+            <Link to="/get-random-image-anime/waifu" className="transition duration-300 ease-in-out hover:text-purple-400">Waifu</Link>
           </li>
           <li>
-            <Link to="/nsfw" className="transition duration-300 ease-in-out hover:text-purple-400">NSFW</Link>
+            <Link to="/get-random-image-anime/nsfw" className="transition duration-300 ease-in-out hover:text-purple-400">NSFW</Link>
             <ul className="subnav bg-gray-800 p-3 space-y-4">
               <li><Link to="/nsfw/blowjob" className="transition duration-300 ease-in-out hover:text-purple-400">BlowJob</Link></li>
               <li><Link to="/nsfw/neko" className="transition duration-300 ease-in-out hover:text-purple-400">Neko</Link></li>
