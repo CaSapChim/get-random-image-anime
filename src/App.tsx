@@ -14,13 +14,13 @@ function App() {
       <div className="w-screen bg-white">
         <Header/>
         <Routes>
-          <Route path="/" element={<Home/>}></Route>
-          <Route path="/awoo" element={<Awoo/>}></Route>
-          <Route path="/neko" element={<Neko/>}></Route>
-          <Route path="/waifu" element={<Waifu/>}></Route>
-          <Route path="/nsfw/neko" element={<NekoNSFW/>}></Route>
-          <Route path="/nsfw/waifu" element={<WaifuNSFW/>}></Route>
-          <Route path="/nsfw/blowjob" element={<BlowJobNSFW/>}></Route>
+          <Route path="get-random-image-anime" element={<Home/>}></Route>
+          <Route path="get-random-image-anime/awoo" element={<Awoo/>}></Route>
+          <Route path="get-random-image-anime/neko" element={<Neko/>}></Route>
+          <Route path="get-random-image-anime/waifu" element={<Waifu/>}></Route>
+          <Route path="get-random-image-anime/nsfw/neko" element={<NekoNSFW/>}></Route>
+          <Route path="get-random-image-anime/nsfw/waifu" element={<WaifuNSFW/>}></Route>
+          <Route path="get-random-image-anime/nsfw/blowjob" element={<BlowJobNSFW/>}></Route>
         </Routes> 
       </div>
     </Router>
